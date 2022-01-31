@@ -1,0 +1,256 @@
+/* Eric Meyer's Reset */
+ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+*, :before, :after {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	outline: none;
+}
+html {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	font-size: 10px;
+
+}
+/*font face*/
+@font-face {
+    font-family: 'ivypresto_headlineregular';
+    src: url('../fonts/ivyprestoheadline-regular-webfont.woff2') format('woff2'),
+         url('../fonts/ivyprestoheadline-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'ivy_style_sansregular';
+    src: url('../fonts/ivystylesans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/ivystylesans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ivy_style_sanssemibold';
+    src: url('../fonts/ivystylesans-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/ivystylesans-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ivy_style_sansthin';
+    src: url('../fonts/ivystylesans-thin-webfont.woff2') format('woff2'),
+         url('../fonts/ivystylesans-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+	font-size:100%;
+	font-family: 'ivy_style_sansregular';
+	line-height: 1.2;
+	color:#000;
+	background: #fff;
+}
+ul,ol{
+	list-style-type: none;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+p{
+	font-size: 1.387rem;
+	color:#42364b;
+	font-family: 'ivy_style_sansthin';
+	line-height: 1.2;
+}
+body img {
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  -o-user-select: none;
+  user-select: none;          
+}
+figure{
+	margin-bottom: 0;
+	margin: 0;
+}
+*:focus {
+    outline: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+/*
+ 2.0.1) Font Face
+ -----------------------------*/
+/*Put Your font face Styles here*/
+
+
+/*
+ 2.0.3) Form Elements
+ -----------------------------*/
+button, input, optgroup, select, textarea {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+	background: #fff;
+	border: 1px solid transparent;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+input,select,textarea{
+	-webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+	border-radius:0;
+}
+a{
+	color:#281932;
+	text-decoration: none;
+	display: inline-block;
+	font-family: 'ivy_style_sansthin';
+    font-size: 1.387rem;
+	transition: all 0.5s;
+}
+a:hover{
+	text-decoration: none;
+	opacity: 0.7;
+}
+a:focus{
+	outline: none;
+	border:none;
+}
+strong{
+	font-family: 'ivy_style_sansregular';
+}
+input {
+	line-height: normal;
+}
+input:focus, select:focus, textarea:focus, button:focus {
+	border:1px solid #918b9e;
+	outline: 0;
+}
+input[type="checkbox"], input[type="radio"] {
+	padding: 0;
+	border: none;
+}
+button, input[type="button"], input[type="reset"], input[type="submit"], input[type="file"] {
+	-webkit-appearance: none;
+	cursor: pointer;
+	line-height: normal;
+	overflow: visible;
+}
+button[disabled], input[disabled] {
+	cursor: default;
+	color: #999;
+	border-color: #ccc;
+}
+button::-moz-focus-inner, input::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+    /*** iPhone and iOS Form Input Zoom Fixes ***/
+/* Fix Input Zoom on devices older than iPhone 5: */
+@media screen and (max-device-width:767px) {
+    select, textarea, input[type="text"], input[type="password"],
+    input[type="datetime"], input[type="datetime-local"],
+    input[type="date"], input[type="month"], input[type="time"],
+    input[type="week"], input[type="number"], input[type="email"],
+    input[type="tel"], input[type="url"]{ font-size: 1.28rem; }
+
+}
+.btn{
+	background-color: #d9634e;
+	color:#fff;
+	font-size: 1.387rem;
+	font-family: 'ivy_style_sansregular';
+	border-radius: 18px;
+	display:block;
+	width:100%;
+	padding: 5px 0 7px;
+	transition: all 0.5s;
+	border: 1px solid transparent;
+}
+.btn:hover{
+	background-color: transparent;
+	border: 1px solid #d9634e;
+	color:#d9634e;
+}
+/*
+ 2.0.4) List Styles
+ ---------------------------------*/
+button{
+	border:none;
+	background: transparent;
+}
+/*
+ 2.0.9) Sprite Icons
+ -------------------------*/
+[class^="icon-"], [class*="icon-"] {
+	background-image: url("../images/sprite.png");
+	background-size: 400px 400px;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: 14px;
+	line-height: 14px;
+	vertical-align: text-top;
+	width: 14px;
+	font-size: 0;
+}
+/*global heading*/
+h1{
+	font-size: 2.56rem;
+	font-family: 'ivypresto_headlineregular';
+	color:#23173e;
+}
+h2{
+	font-family: 'ivypresto_headlineregular';
+	color:#281932;
+}
+h3{
+	font-family: 'ivypresto_headlineregular';
+	font-size: 1.707rem;
+	color:#281932;
+}
+h4{
+	font-size: 1.28rem;
+	color:#281932;
+	font-family: 'ivy_style_sansthin';
+
+}
+h5{
+	font-size: 1.25rem;
+}
+h6{
+	font-size: 1.2rem;
+}
+/* Containers*/
+.container {
+    max-width: 1000px;
+    padding: 0 10px 0 12px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+
